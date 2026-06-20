@@ -1,0 +1,10 @@
+# Central configurations for all Job Find services
+info:
+  app: Job Find Platform
+  version: 1.0.0
+
+# All microservices reading from this config server will inherit this Eureka address
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7800/eureka/

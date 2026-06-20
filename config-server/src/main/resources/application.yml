@@ -1,0 +1,19 @@
+server:
+  port: 7850
+
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:///E:/Abhinav/jobfind/config-properties/
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7800/eureka/
+
