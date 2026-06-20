@@ -31,9 +31,9 @@ server:
   port: 7784
 
 cloudinary:
-  cloud_name: dr3rkjnkx
-  api_key: 485324925179717
-  api_secret: bTe7W2Xt4hoTHHSKoyQdBXiXOiE
+  cloud_name: ${CLOUDINARY_CLOUD_NAME:your_cloud_name}
+  api_key: ${CLOUDINARY_API_KEY:your_api_key}
+  api_secret: ${CLOUDINARY_API_SECRET:your_api_secret}
 
 eureka:
   client:
