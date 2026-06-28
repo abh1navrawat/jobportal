@@ -23,8 +23,7 @@ import lombok.RequiredArgsConstructor;
 @RequestMapping("/api/jobPost")
 public class JobPostController {
 	
-	@Autowired
-	private JobPostService jobPostService;
+	private final JobPostService jobPostService;
 	
 	
 	@PostMapping 
@@ -51,7 +50,7 @@ public class JobPostController {
 	public ResponseEntity<List<JobPostDTO>>getJobByJobTitle(@PathVariable String jobTitle){
 		return ResponseEntity.ok(jobPostService.getJobByJobTitle(jobTitle));
 	}
-	@GetMapping("/serach/{jobLocation}")
+	@GetMapping("/search/{jobLocation}")
 	public ResponseEntity<List<JobPostDTO>>getJobByJobLocation(@PathVariable String jobLocation){
 		return ResponseEntity.ok(jobPostService.getJobByJobLocation(jobLocation));
 	}

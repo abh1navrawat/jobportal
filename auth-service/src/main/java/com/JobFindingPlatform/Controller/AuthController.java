@@ -20,8 +20,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class AuthController {
 	
-	@Autowired
-	private AuthService authService;
+	private final AuthService authService;
 	
 	@PostMapping("/register")
 	public ResponseEntity<AuthResponseDTO>register(@RequestBody UserDTO dto){

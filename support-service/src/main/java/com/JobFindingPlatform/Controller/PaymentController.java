@@ -27,17 +27,10 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class PaymentController {
 	
-	@Autowired
-	private PaymentService paymentService;
-	
-	@Autowired
-	private SubscriptionPlanRepository subPlanRepo;
-	
-	@Autowired
-	private PaymentRepository paymentRepo;
-	
-	@Autowired
-	private InvoiceService invoiceService;
+	private final PaymentService paymentService;
+	private final SubscriptionPlanRepository subPlanRepo;
+	private final PaymentRepository paymentRepo;
+	private final InvoiceService invoiceService;
 	
 	
 	@PostMapping("/process")

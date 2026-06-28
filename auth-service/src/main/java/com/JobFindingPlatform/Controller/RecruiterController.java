@@ -21,8 +21,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class RecruiterController {
 	
-	@Autowired
-	private RecruiterService recruiterService;
+	private final RecruiterService recruiterService;
 	
 	
 	@PostMapping
@@ -31,8 +30,8 @@ public class RecruiterController {
 	}
 
 	@GetMapping("/email/{email}")
-	public ResponseEntity<Optional<RecruiterDTO>>getRecruiterByEmail(@PathVariable String recruiterEmail){
-		return ResponseEntity.ok(recruiterService.getRecruiterByEmail(recruiterEmail));
+	public ResponseEntity<Optional<RecruiterDTO>>getRecruiterByEmail(@PathVariable String email){
+		return ResponseEntity.ok(recruiterService.getRecruiterByEmail(email));
 	}
 	
 	@GetMapping("/{id}")

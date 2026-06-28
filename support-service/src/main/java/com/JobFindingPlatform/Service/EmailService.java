@@ -37,13 +37,13 @@ public class EmailService {
 //		mailSender.send(message);
 //		
 //	}
+	@org.springframework.beans.factory.annotation.Value("${spring.mail.username}")
+	private String fromEmail;
 	
-	
+	@org.springframework.beans.factory.annotation.Value("${spring.mail.password}")
+	private String password;
 	
 	public void sendEmail(EmailRequestDTO dto) {
-		
-		final String fromEmail= "1abhinavrawat@gmail.com";
-		final String password = "1crazy!";
 		
 		
 		

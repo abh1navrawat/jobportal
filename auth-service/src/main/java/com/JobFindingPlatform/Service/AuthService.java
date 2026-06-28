@@ -16,12 +16,9 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class AuthService {
 
-	@Autowired
-	private UserRepository userRepository;
-	@Autowired
-	private JWTUtil jwtUtil;
-	@Autowired
-	private PasswordEncoder passwordEncoder;
+	private final UserRepository userRepository;
+	private final JWTUtil jwtUtil;
+	private final PasswordEncoder passwordEncoder;
 	
 	public AuthResponseDTO register(UserDTO dto) {
 		

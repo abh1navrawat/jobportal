@@ -22,8 +22,7 @@ import lombok.RequiredArgsConstructor;
 public class JobSeekerController {
 	
 	
-	@Autowired
-	private JobSeekerService jobSeekerService;
+	private final JobSeekerService jobSeekerService;
 	
 	
 	@PostMapping
@@ -37,7 +36,7 @@ public class JobSeekerController {
 	}
 	
 	@GetMapping("/{id}")
-	public ResponseEntity<Optional<JobSeekerDTO>>geyJobSeekerById(@PathVariable Long id){
+	public ResponseEntity<Optional<JobSeekerDTO>>getJobSeekerById(@PathVariable Long id){
 		return ResponseEntity.ok(jobSeekerService.getJobSeekerById(id));
 	}
 }

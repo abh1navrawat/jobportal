@@ -17,8 +17,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class JobPostService {
 	
-	@Autowired
-	private JobPostRepository jobPostRepo;
+	private final JobPostRepository jobPostRepo;
 	
 	
 	public String createJobPost(JobPostDTO dto) {

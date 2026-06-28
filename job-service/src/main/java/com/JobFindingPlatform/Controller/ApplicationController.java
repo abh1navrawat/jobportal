@@ -21,13 +21,11 @@ import com.JobFindingPlatform.Enum.JobType;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping("/api/apllications")
+@RequestMapping("/api/applications")
 @RequiredArgsConstructor
 public class ApplicationController {
 
-	
-	@Autowired
-	private ApplicationService appService;
+	private final ApplicationService appService;
 	
 	
 	@PostMapping("/apply")
