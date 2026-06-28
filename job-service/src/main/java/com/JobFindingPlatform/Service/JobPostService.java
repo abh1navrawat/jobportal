@@ -26,7 +26,7 @@ public class JobPostService {
 		
 		job.setCompanyName(dto.getCompanyName());
 		job.setJobType(dto.getJobType());
-		job.setJobCatogory(dto.getJobCatogory());
+		job.setJobCategory(dto.getJobCategory());
 		job.setJobDescription(dto.getJobDescription());
 		job.setJobLocation(dto.getJobLocation());
 		job.setJobTitle(dto.getJobTitle());
@@ -77,7 +77,7 @@ public class JobPostService {
 		JobPostDTO dto = new JobPostDTO();
 		
 		dto.setCompanyName(jobPost.getCompanyName());
-		dto.setJobCatogory(jobPost.getJobCatogory());
+		dto.setJobCategory(jobPost.getJobCategory());
 		dto.setJobDescription(jobPost.getJobDescription());
 		dto.setJobType(jobPost.getJobType());
 		dto.setJobTitle(jobPost.getJobTitle());

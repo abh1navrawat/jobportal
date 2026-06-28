@@ -175,7 +175,7 @@ function App() {
         jobLocation,
         remote: jobRemote,
         companyName: jobCompany,
-        jobCatogory: jobCategory,
+        jobCategory: jobCategory,
         jobDescription: jobDesc,
         postedBy: userEmail
       });

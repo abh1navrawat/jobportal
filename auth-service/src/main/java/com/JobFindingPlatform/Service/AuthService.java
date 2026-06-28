@@ -26,7 +26,7 @@ public class AuthService {
 	public AuthResponseDTO register(UserDTO dto) {
 		
 		if(userRepository.findByUserEmail(dto.getUserEmail()).isPresent()) {
-			throw new RuntimeException("Emial already exist");
+			throw new RuntimeException("Email already exists");
 		}
 		User user = new User();
 		

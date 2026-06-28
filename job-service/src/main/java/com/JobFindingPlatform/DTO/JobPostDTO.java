@@ -21,7 +21,7 @@ public class JobPostDTO {
 	private String jobLocation;
 	private String remote;
 	private String companyName;
-	private String jobCatogory;
+	private String jobCategory;
 	private String jobDescription;
 	private String postedBy;
 	private LocalDateTime postedAt;
@@ -57,11 +57,11 @@ public class JobPostDTO {
 	public void setCompanyName(String companyName) {
 		this.companyName = companyName;
 	}
-	public String getJobCatogory() {
-		return jobCatogory;
+	public String getJobCategory() {
+		return jobCategory;
 	}
-	public void setJobCatogory(String jobCatogory) {
-		this.jobCatogory = jobCatogory;
+	public void setJobCategory(String jobCategory) {
+		this.jobCategory = jobCategory;
 	}
 	public String getJobDescription() {
 		return jobDescription;
