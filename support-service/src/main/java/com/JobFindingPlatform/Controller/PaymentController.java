@@ -58,7 +58,7 @@ public class PaymentController {
 		byte[] pdfBytes = invoiceService.generateInvoice(pay);
 		
 		return ResponseEntity.ok()
-				.header("Content-Diposition", "Attachment; fileNameInvoice-" +pay.getTransactionId() + ".pdf")
+				.header("Content-Disposition", "attachment; filename=\"Invoice-" + pay.getTransactionId() + ".pdf\"")
 				.contentType(org.springframework.http.MediaType.APPLICATION_PDF).body(pdfBytes);
 	}
 	

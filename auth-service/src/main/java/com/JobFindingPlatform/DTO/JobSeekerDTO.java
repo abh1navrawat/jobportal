@@ -15,7 +15,7 @@ public class JobSeekerDTO {
 	private String fullName;
 	private String email;
 	private String phone;
-	private String colleageName;
+	private String collegeName;
 	private String universityName;
 	private String degree;
 	private LocalDate passingYear;
@@ -46,12 +46,12 @@ public class JobSeekerDTO {
 		this.phone = phone;
 	}
 
-	public String getColleageName() {
-		return colleageName;
+	public String getCollegeName() {
+		return collegeName;
 	}
 
-	public void setColleageName(String colleageName) {
-		this.colleageName = colleageName;
+	public void setCollegeName(String collegeName) {
+		this.collegeName = collegeName;
 	}
 
 	public String getUniversityName() {

@@ -26,7 +26,7 @@ public class JobSeekerService {
 		jobseeker.setFullName(dto.getFullName());
 		jobseeker.setEmail(dto.getEmail());
 		jobseeker.setPhone(dto.getPhone());
-		jobseeker.setColleageName(dto.getColleageName());
+		jobseeker.setCollegeName(dto.getCollegeName());
 		jobseeker.setUniversityName(dto.getUniversityName());
 		jobseeker.setPassingYear(dto.getPassingYear());
 		jobseeker.setDegree(dto.getDegree());
@@ -47,7 +47,7 @@ public class JobSeekerService {
 			                                    dto.setFullName(jobSeek.getFullName());
 			                                    dto.setEmail(jobSeek.getEmail());
 			                                    dto.setPhone(jobSeek.getPhone());
-			                                    dto.setColleageName(jobSeek.getColleageName());
+			                                    dto.setCollegeName(jobSeek.getCollegeName());
 			                                    dto.setUniversityName(jobSeek.getUniversityName());
 			                                    dto.setPassingYear(jobSeek.getPassingYear());
 			                                    dto.setDegree(jobSeek.getDegree());
@@ -65,7 +65,7 @@ public class JobSeekerService {
             dto.setFullName(jobSeeks.getFullName());
             dto.setEmail(jobSeeks.getEmail());
             dto.setPhone(jobSeeks.getPhone());
-            dto.setColleageName(jobSeeks.getColleageName());
+            dto.setCollegeName(jobSeeks.getCollegeName());
             dto.setUniversityName(jobSeeks.getUniversityName());
             dto.setPassingYear(jobSeeks.getPassingYear());
             dto.setDegree(jobSeeks.getDegree());
