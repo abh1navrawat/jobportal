@@ -21,7 +21,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class RecruiterController {
 	
-	private final RecruiterService recruiterService;
+	@Autowired
+	private RecruiterService recruiterService;
 	
 	
 	@PostMapping

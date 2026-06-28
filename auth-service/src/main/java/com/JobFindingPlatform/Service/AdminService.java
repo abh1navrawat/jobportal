@@ -16,7 +16,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class AdminService {
 	
-	private final AdminRepository adminRepo;
+	@Autowired
+	private AdminRepository adminRepo;
 	
 	
 	

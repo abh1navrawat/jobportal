@@ -15,7 +15,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class JobSeekerService {
 	
-	private final JobSeekerRepository jobSeekerRepo;
+	@Autowired
+	private JobSeekerRepository jobSeekerRepo;
 	
 	
 	

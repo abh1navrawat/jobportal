@@ -25,7 +25,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class ApplicationController {
 
-	private final ApplicationService appService;
+	@Autowired
+	private ApplicationService appService;
 	
 	
 	@PostMapping("/apply")

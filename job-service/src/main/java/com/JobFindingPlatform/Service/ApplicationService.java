@@ -16,7 +16,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class ApplicationService {
 	
-	private final ApplicationRepository appRepo;
+	@Autowired
+	private ApplicationRepository appRepo;
 	
 	
 	public String apply(ApplicationDTO dto) {

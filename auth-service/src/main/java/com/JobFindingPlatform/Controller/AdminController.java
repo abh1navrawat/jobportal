@@ -22,7 +22,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class AdminController {
 	
-	private final AdminService adminService;
+	@Autowired
+	private AdminService adminService;
 	
 	@PostMapping("/action")
 	public ResponseEntity<Admin> performAction(@RequestBody AdminDTO dto){

@@ -16,7 +16,8 @@ import lombok.RequiredArgsConstructor;
 @RequestMapping("/api/notifications")
 @RequiredArgsConstructor
 public class EmailController {
-	private final EmailService emailService;
+	@Autowired
+	private EmailService emailService;
 	
 	@PostMapping("/send")
 	public ResponseEntity<String>sendEmail(@RequestBody EmailRequestDTO dto){

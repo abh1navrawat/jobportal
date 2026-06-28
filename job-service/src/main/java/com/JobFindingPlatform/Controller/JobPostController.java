@@ -23,7 +23,8 @@ import lombok.RequiredArgsConstructor;
 @RequestMapping("/api/jobPost")
 public class JobPostController {
 	
-	private final JobPostService jobPostService;
+	@Autowired
+	private JobPostService jobPostService;
 	
 	
 	@PostMapping 

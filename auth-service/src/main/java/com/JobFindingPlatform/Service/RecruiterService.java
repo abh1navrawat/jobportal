@@ -15,7 +15,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class RecruiterService {
 	
-	private final RecruiterRepository recruiterRepo;
+	@Autowired
+	private RecruiterRepository recruiterRepo;
 	
 	public RecruiterDTO createRecruiterProfile(RecruiterDTO dto) {
 		Recruiter recruiter = new Recruiter();

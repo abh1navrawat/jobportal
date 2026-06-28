@@ -18,7 +18,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class PaymentService {
 	
-	private final PaymentRepository paymentRepo;
+	@Autowired
+	private PaymentRepository paymentRepo;
 	
 	
 	public PaymentResponseDTO processPayment(PaymentRequestDTO dto) {
