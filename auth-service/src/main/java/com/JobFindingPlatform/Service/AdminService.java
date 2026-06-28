@@ -21,7 +21,7 @@ public class AdminService {
 	
 	
 	
-	public Admin performanceAction(AdminDTO dto) {
+	public Admin performAction(AdminDTO dto) {
 		
 		Admin admin = new Admin();
 		admin.setAdminId(dto.getAdminId());
@@ -33,11 +33,11 @@ public class AdminService {
 		
 	}
 	
-	public List<Admin>getactionsByAdmin(Long adminId){
+	public List<Admin> getActionsByAdmin(Long adminId){
 		return adminRepo.findByAdminId(adminId);
 	}
 	
-	public List<Admin>getActionsByUser(Long userId){
+	public List<Admin> getActionsByUser(Long userId){
 		return adminRepo.findByUserId(userId);
 	}
 

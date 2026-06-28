@@ -22,22 +22,19 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class AdminController {
 	
-	
-	@Autowired
-	private AdminService adminService;
-	
+	private final AdminService adminService;
 	
 	@PostMapping("/action")
-	public ResponseEntity<Admin>perfoemAction(@RequestBody AdminDTO dto){
-		return ResponseEntity.ok(adminService.performanceAction(dto));
+	public ResponseEntity<Admin> performAction(@RequestBody AdminDTO dto){
+		return ResponseEntity.ok(adminService.performAction(dto));
 	}
 
 	@GetMapping("/admin/{adminId}")
-	public ResponseEntity<List<Admin>>getLogByAdmin(@PathVariable Long adminId){
-		return ResponseEntity.ok(adminService.getactionsByAdmin(adminId));
+	public ResponseEntity<List<Admin>> getLogByAdmin(@PathVariable Long adminId){
+		return ResponseEntity.ok(adminService.getActionsByAdmin(adminId));
 	}
 	@GetMapping("/user/{userId}")
-	public ResponseEntity<List<Admin>>getLogByUser(@PathVariable Long userId){
+	public ResponseEntity<List<Admin>> getLogByUser(@PathVariable Long userId){
 		return ResponseEntity.ok(adminService.getActionsByUser(userId));
 	}
 }
